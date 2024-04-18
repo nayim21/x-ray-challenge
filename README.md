@@ -1,33 +1,23 @@
-# مساله‌ی طبقه‌بندی تصاویر x-ray
+Classification of X-ray images
 
-## صورت مسئله: 
-شهرام در بایگانی یک مرکز درمانی بین جاده ای کار می کند. او موظف است روزانه پرونده های پزشکی بیماران (که از بخش های مختلف مرکز جمع آوری شده، تعداد آنها بسیار زیاد است و میتواند شامل داده های نامرتبط باشد) را در دسته های از پیش تعریف شده دسته بندی کند. در ماه فروردین و همچنین فصل تابستان با توجه به افزایش سفر ها و تصادفات تعداد مراجعات به این مرکز درمانی به شدت افزایش پیدا می کند، در حالی که شهرام فرصت دسته بندی پرونده ها را به تنهایی ندارد. با توجه به این موضوع مرکز درمان تصمیم به هوشمند سازی طبقه بندی پرونده ها گرفته است. در این مساله قصد داریم بخشی از این طبقه بندی را انجام دهیم.
+Shahram works in the archives of an inter-road medical center. He is obliged to classify the patient's medical files (which are collected from different departments of the center, their number is very large and may contain unrelated data) into predefined categories. In April and also in the summer season, due to the increase in trips and accidents, the number of referrals to this medical center increases sharply, while Shahram does not have the opportunity to sort the cases on his own. Considering this issue, the treatment center has decided to make the classification of cases smarter. In this matter, we intend to do a part of this classification.
 
-توضیح در مورد داده: داده های این مساله شامل 5 دسته برچسب گذاری شده از تصاویر x-ray (دندان(1)، جمجمه(2)، قفسه سینه(3)، دست(4)، پا(5)) می باشد، که در هر دسته درصد کمی از داده ها در زمان آموزش نسبت به برچسب نسبت داده شده به آنها نادرست می باشند. هدف از این مساله طبقه بندی داده های تست به 6 دسته ی (دندان(1)، جمجمه(2)، قفسه سینه(3)، دست(4)، پا(5) و داده های پرت(6)) می باشد. داده‌های این مساله از این لینک قابل دسترس می‌باشند.
+Explanation about the data: The data of this problem includes 5 labeled categories of x-ray images (teeth(1), skull(2), chest(3), hand(4), foot(5)). In each category, a small percentage of the data during training is incorrect compared to the label attributed to them. The purpose of this problem is to classify test data into 6 categories (teeth (1), skull (2), chest (3), hand (4), foot (5), and outlier data (6)). The data on this problem can be accessed from this link.
 
-## نحوه ارزیابی: 
-به منظور ارزیابی مدل‌ها،‌ تعدادی تصویر تست (از دسته های تصاویر x-ray دندان(1)، جمجمه(2)، قفسه سینه(3)، دست(4)، پا(5) و داده های خارج از این دسته‌ها(6)) به مدل داده می‌شود و میزان accuracy برچسب استخراج شده در مقایسه با برچسب واقعی داده ارزیابی می‌گردد. (هر مرحله‌ی ارزیابی شامل دو تصویر است و در صورتی امتیاز آن مرحله را دریافت می کنید که برچسب هر دو تصویر به درستی تخمین زده شده باشد). در این مساله علاوه بر صحت (accuracy)، سرعت اجرای برنامه و همچنین میزان حافظه‌ی مصرف شده در زمان اجرا و تعداد خط کد نیز مورد ارزیابی قرار می‌گیرد (۸۰ درصد از امتیاز ارزیابی به صحت، ۱۰ درصد به سرعت اجرا، ۵ درصد میزان حافظه مصرف شده و ۵ درصد تعداد خط کد مورد نیاز اختصاص داده شده است).
+How to evaluate:
+To evaluate the models, several test images (from the categories of x-ray images of teeth (1), skull (2), chest (3), hand (4), foot (5), and data outside these categories) 6)) is given to the model and the accuracy of the extracted label is evaluated compared to the real data label. (Each assessment step includes two images and you get the score for that step if the labels of both images are correctly estimated). In this issue, in addition to accuracy, the speed of program execution as well as the amount of memory consumed during execution and the number of lines of code are also evaluated (80% of the evaluation points are for accuracy, 10% for execution speed, 5% for memory amount consumed and 5% of the number of required code lines is allocated).
 
+steps
+(1) Detection and removal of out-of-range data (2) Normalization (3) Modeling (4) Optimization (5) Open set learning
 
+Step one:
+Preliminary machine vision
+Preliminary gate
+Preliminary preprocessing
+Introductory Feature Engineering
 
-## گام ها
-(1)تشخیص و حذف داده های خارج از محدوده
-(2) نرمالسازی
- (3)مدلسازی
- (4)بهینه‌سازی
-(5)یادگیری مجموعه باز
-
-## نشان ها
-### گام اول: 
-1) بینایی ماشین مقدماتی
-2) گیت مقدماتی
-3) پیش پردازش مقدماتی
-4) مهندسی ویژگی مقدماتی
-
-### گام دوم:
-1) بینایی ماشین متوسط
-2) گیت مقدماتی
-3) پیش پردازش مقدماتی
-4) مهندسی ویژگی مقدماتی
-
-
+Second step:
+Average machine vision
+Preliminary gate
+Preliminary preprocessing
+Introductory Feature Engineering
